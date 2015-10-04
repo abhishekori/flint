@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="turing.com.flint.Contact_feed">
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never"  />
+    <item android:icon="@drawable/ic_user" android:id="@+id/pro_icon" app:showAsAction="always"
+        android:title="profile"></item>
+    <item android:icon="@drawable/ic_addu" android:id="@+id/addu_icon" app:showAsAction="always"
+        android:title="search"></item>
+
+</menu>

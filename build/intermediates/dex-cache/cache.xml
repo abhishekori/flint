@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-be1d59ed3c431c1ff5269d545bd61b7c896e5331.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-e42a04c3fc2b62b9625c2cb5fddaa266afc897fd.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-8c2aaebe92ddbe449d5edfcc38864645619c3bf4.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/picasso-2.5.2/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-8a6eafd408c8f81f51defdf1f33491a9093b0191.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-f1d48dfb0dc8b99e9c6d943f46720e849db16092.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-27d5221b31f401cc1e99832897368e2a8ab9e5a8.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-69cbed47c1b8f72475c1cba30b9d433840152220.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-3e8557c5466a67af6bde800d735e4b97e92e5f81.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-3e298c727677e1cba7a1755f9b33c80e524725d8.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-485e19eb93100a999f4c1d5762aa4d4c47e4fe66.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-5727da10d976a81ce0197f2733d04605ec37e400.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-8460babd86ac90ca24eda74a3e9a4fc28b160bef.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-74815fa045332afe54e1c1f37ea0ccd56227d2c0.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-e4689a23693d5d5d87e3fefdfa6f334d5807253f.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-dfada80d85c356eef71c56dab5ccbf72749cd3ba.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-91864917b6d947f3623848cc4be19b1b4ca8ea14.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-d5a6f169fa3e923e156822996aefded1f417df63.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-692ebef758ce6ba92886ac1ad5101b653621d9e7.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-9ade7022a822309a9b5530bc3d5437671496a954.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-fd2a12ce480dd4d05784520eee07aaabf7ac576f.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-c97825a253b74a1548fed05afad7b1612751bde3.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-33f8d42786ce7f278994b3c4790b68a133a656ca.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-aa24129cc322c7fb8b2de28badda773acd1c2e30.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-37c8bb0f5ae7e92c72d10fdae8b61655a121e301.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-cff71c7d681a67ef4abfef230d64d25fbc190e53.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-a67dc3999b9b15543896e8416263ce6b88c8da83.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-51122135c2d111fc24cb1df96b87958d94227a9d.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-45c60a0db3c46f69dd68f355a3813e9eacb91e30.jar" />
+    </item>
+    <item
+        jar="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/home/abhishek/AndroidStudioProjects/Flint2/app/build/intermediates/pre-dexed/debug/classes-8738aed648f7f8aabc72005d3f86e28f649f4942.jar" />
+    </item>
+
+</items>
