@@ -7,10 +7,12 @@
 <item name="colorPrimary">#338ae8</item>
         <item name="colorPrimaryDark">#007afc</item>
 
+
 <item name="android:logo">@mipmap/ic_launcher</item>
 
 
     </style>
+
 
 
 </resources>

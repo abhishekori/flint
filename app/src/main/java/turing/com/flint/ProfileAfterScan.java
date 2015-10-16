@@ -1,10 +1,13 @@
 package turing.com.flint;
 
+import android.app.ActionBar;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
@@ -14,9 +17,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -44,11 +50,13 @@ public class ProfileAfterScan extends ActionBarActivity implements View.OnClickL
 
 
     TextView tvFullName,tvUserName,tvDOB,tvGender;
-    Button bEmail,bPhone,bFb,bTwitter;
+    ImageButton bEmail,bPhone,bFb,bTwitter;
     String email,profile_pic_url,fname,uname,phone_num,fb,twitter,dob,gender;
     ImageView profile_pic;
     SharedPreferences pref;
     String fromemail,from="null";
+
+    ProgressDialog progress;
 
 
     @Override
@@ -60,16 +68,18 @@ public class ProfileAfterScan extends ActionBarActivity implements View.OnClickL
         tvUserName = (TextView) findViewById(R.id.iun);
         tvDOB = (TextView) findViewById(R.id.idob);
         tvGender = (TextView) findViewById(R.id.igender);
-        bEmail = (Button) findViewById(R.id.iemail);
-        bPhone = (Button) findViewById(R.id.iphone);
+        bEmail = (ImageButton) findViewById(R.id.iemail);
+        bPhone = (ImageButton) findViewById(R.id.iphone);
         Bundle extras = getIntent().getExtras();
-        bEmail = (Button) findViewById(R.id.iemail);
+        bEmail = (ImageButton) findViewById(R.id.iemail);
         bEmail.setOnClickListener(this);
-        bPhone = (Button) findViewById(R.id.iphone);
+        bPhone = (ImageButton) findViewById(R.id.iphone);
         bPhone.setOnClickListener(this);
-        bFb = (Button) findViewById(R.id.ifb);
+        bFb = (ImageButton) findViewById(R.id.ifb);
         bFb.setOnClickListener(this);
-        bTwitter = (Button) findViewById(R.id.itwitter);
+        bTwitter = (ImageButton) findViewById(R.id.itwitter);
+        progress = ProgressDialog.show(ProfileAfterScan.this, "Profile",
+                "Loading...", true);
 
 
         bTwitter.setOnClickListener(this);
@@ -80,6 +90,7 @@ public class ProfileAfterScan extends ActionBarActivity implements View.OnClickL
             from = extras.getString("from");
 
         }
+    //   Toast.makeText(getApplicationContext(),from,Toast.LENGTH_LONG).show();
 
         new getProfileDetails().execute();
     }
@@ -190,6 +201,7 @@ public class ProfileAfterScan extends ActionBarActivity implements View.OnClickL
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             parseJson(s);
+            getSupportActionBar().setTitle(fname);
         }
         private void parseJson(String s) {
             try {
@@ -198,8 +210,9 @@ public class ProfileAfterScan extends ActionBarActivity implements View.OnClickL
                 JSONObject jsonObject1 = new JSONObject(jsonObject.getString("0"));
               //  Toast.makeText(getApplicationContext(), jsonObject1.getString("id"), Toast.LENGTH_LONG).show();
                profile_pic_url=jsonObject1.getString("gpic");
-                fname=jsonObject1.getString("full_name");;
-                uname=jsonObject1.getString("user_name");;
+                fname=jsonObject1.getString("full_name");
+
+                uname=jsonObject1.getString("user_name");
                 phone_num=jsonObject1.getString("ph_num");
                 fb=jsonObject1.getString("fb");
                 twitter=jsonObject1.getString("twitter");
@@ -210,10 +223,12 @@ public class ProfileAfterScan extends ActionBarActivity implements View.OnClickL
                 tvUserName.setText(uname);
                 tvDOB.setText(dob);
                 tvGender.setText(gender);
+                Picasso.with(getApplicationContext()).load(profile_pic_url).error(R.mipmap.ic_launcher).placeholder(R.mipmap.ic_launcher).into(profile_pic);
+                progress.dismiss();
 
 
-               new setImg(profile_pic).execute(profile_pic_url);
-                if(from.equals("null")){
+
+                if(from.equals("search")){
                     new sendFrndRqst().execute();
                 }
 

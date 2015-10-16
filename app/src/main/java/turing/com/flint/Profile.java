@@ -1,24 +1,30 @@
 package turing.com.flint;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.internal.view.SupportActionModeWrapper;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,7 +62,7 @@ import java.util.List;
 public class Profile extends ActionBarActivity implements View.OnClickListener {
 
     TextView tvFullName,tvUserName,tvDOB,tvGender;
-    Button bEmail,bPhone,bFacebook,bTwitter;
+    ImageButton bEmail,bPhone,bFacebook,bTwitter;
     String guemail,profile_pic_url,fname,uname,phone_num,fb,twitter,dob,gender;
     ImageView profile_pic;
     SharedPreferences pref,cache;
@@ -74,13 +80,13 @@ public class Profile extends ActionBarActivity implements View.OnClickListener {
         tvUserName = (TextView) findViewById(R.id.iun);
         tvDOB = (TextView) findViewById(R.id.idob);
         tvGender = (TextView) findViewById(R.id.igender);
-        bEmail = (Button) findViewById(R.id.iemail);
+        bEmail = (ImageButton) findViewById(R.id.iemail);
         bEmail.setOnClickListener(this);
-        bPhone = (Button) findViewById(R.id.iphone);
+        bPhone = (ImageButton) findViewById(R.id.iphone);
         bPhone.setOnClickListener(this);
-        bFacebook = (Button) findViewById(R.id.ifb);
+        bFacebook = (ImageButton) findViewById(R.id.ifb);
         bFacebook.setOnClickListener(this);
-        bTwitter = (Button) findViewById(R.id.itwitter);
+        bTwitter = (ImageButton) findViewById(R.id.itwitter);
         bTwitter.setOnClickListener(this);
 
 
@@ -213,6 +219,9 @@ public class Profile extends ActionBarActivity implements View.OnClickListener {
 
             parseJson(s);
 
+
+            getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + fname + "</font>"));
+
         }
 
 
@@ -225,6 +234,7 @@ public class Profile extends ActionBarActivity implements View.OnClickListener {
             // Toast.makeText(getApplicationContext(),jsonObject1.getString("id"),Toast.LENGTH_LONG).show();
             profile_pic_url=jsonObject1.getString("gpic");
             fname=jsonObject1.getString("full_name");;
+
             uname=jsonObject1.getString("user_name");;
             phone_num=jsonObject1.getString("ph_num");
             fb=jsonObject1.getString("fb");

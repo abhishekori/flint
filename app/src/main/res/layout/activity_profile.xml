@@ -80,17 +80,23 @@
 
              android:weightSum="100">
 
-            <Button
+            <ImageButton
+                android:src="@drawable/ic_mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="email"
                 android:layout_weight="50"
+                android:background="#0000"
+                android:padding="10dp"
                 android:id="@+id/iemail" />
-             <Button
+             <ImageButton
+                 android:src="@drawable/ic_call"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="phone"
+                 android:background="#0000"
                  android:layout_weight="50"
+                 android:padding="10dp"
                  android:id="@+id/iphone" />
          </LinearLayout>
          <LinearLayout
@@ -99,17 +105,22 @@
              android:orientation="horizontal"
              android:weightSum="100">
 
-             <Button
+             <ImageButton
+                 android:src="@drawable/ic_fbicon"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="facebook"
-
+                 android:background="#0000"
                  android:id="@+id/ifb"
+                 android:padding="10dp"
                  android:layout_weight="50" />
-             <Button
+             <ImageButton
+                 android:src="@drawable/ic_twitter"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="twitter"
+                 android:background="#0000"
+                 android:padding="10dp"
                  android:id="@+id/itwitter"
                  android:layout_weight="50" />
          </LinearLayout>

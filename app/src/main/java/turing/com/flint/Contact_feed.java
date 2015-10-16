@@ -57,9 +57,10 @@ public class Contact_feed extends ActionBarActivity {
         setContentView(R.layout.activity_contact_feed);
         recyclerView = (RecyclerView) findViewById(R.id.irecycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        progress = ProgressDialog.show(Contact_feed.this, "Your feed",
-                "Loading...", true);
+
         if(isNetworkConnected()){
+            progress = ProgressDialog.show(Contact_feed.this, "Your feed",
+                    "Loading...", true);
 
             new getFreinds().execute();
         }else{
@@ -205,6 +206,7 @@ public class Contact_feed extends ActionBarActivity {
                 e.printStackTrace();
             }
             String data = null;
+            progress.dismiss();
             HttpEntity ent = httpResponse.getEntity();
             try {
                 data = EntityUtils.toString(ent);
@@ -251,7 +253,7 @@ public class Contact_feed extends ActionBarActivity {
                 fitem.setThumb(img);
                 fitem.setEmail(uemail);
                 feedItemList.add(fitem);
-                progress.dismiss();;
+
 
                 //Log.d("obj",img);
             }

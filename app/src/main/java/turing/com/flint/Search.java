@@ -87,10 +87,11 @@ public class Search extends ActionBarActivity {
         guemail=pref.getString("unid", "null");
         String url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+guemail;
        // new setBarcode().execute(url);
-        progress = ProgressDialog.show(Search.this, "QR Code",
-                "Loading...", true);
 
             if(isNetworkConnected()){
+                progress = ProgressDialog.show(Search.this, "QR Code",
+                        "Loading...", true);
+
 
                 Picasso.with(getApplicationContext()).load(url).error(R.mipmap.ic_launcher).placeholder(R.mipmap.ic_launcher).into(barcode);
 
@@ -98,7 +99,7 @@ public class Search extends ActionBarActivity {
             }else{
                 Picasso.with(getApplicationContext()).load(url).error(R.mipmap.ic_launcher).placeholder(R.mipmap.ic_launcher).into(barcode);
                 Toast.makeText(getApplicationContext(),"Please connect to the internet",Toast.LENGTH_LONG).show();
-                progress.dismiss();
+
             }
     }
     private boolean isNetworkConnected() {
@@ -166,10 +167,11 @@ public class Search extends ActionBarActivity {
                 //get the extras that are returned from the intent
                 String contents = intent.getStringExtra("SCAN_RESULT");
                 String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-               Toast toast = Toast.makeText(this, contents, Toast.LENGTH_LONG);
-                toast.show();
+              // Toast toast = Toast.makeText(this, contents, Toast.LENGTH_LONG);
+               // toast.show();
                 Intent i = new Intent(Search.this, ProfileAfterScan.class);
                 i.putExtra("email", contents);
+                i.putExtra("from","search");
                 if(isNetworkConnected()){
                     startActivity(i);
 
